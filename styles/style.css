@@ -1,38 +1,111 @@
 .header {
-    display: grid;
-    grid-template-columns: 1.51fr 2fr 1.5fr;
-    align-items: center;
-    padding: 92px 51px 89px;
-  }
-.header_menu{
-display: flex;
-padding: 44px 30px 39px 26px;
+  display: flex;
+  width: 1100px;
+  padding: 93px 24px 89px 24px;
 }
-.header__links-list-item {
-  list-style: circle;
-}
-.menu-link{
-display: flex;
-padding: 44px 30px 39px 26px;
-}
-.nav a:before {
-content: "$";
-margin-right: 10px;
-font-size: 20px;
+.header__menu {
+  display: flex;
+  padding: 44px 30px 39px 26px;
 }
 
-.info_class{
-display:flex;
-justify-content: flex-end;
+.header__links-list {
+  display: flex;
+  list-style: circle; 
+  gap: 34px;
+  font-size: 18px;
 }
-.headerlogo_img{
-display:flex;
-justify-content: center;
-width: 50px;
-height: 50px;
+
+.header__links-list-item_activ {
+  list-style: none;
 }
-.cover_content-section{
-background-image: url(../images/cover.jpg);
+
+.header_link_activ {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  width: 138px;
+  margin-left: 10px;
+  margin-right: 186px;
+}
+
+.address {
+  display: block;
+  padding-top: 3px;
+  font-size: 18.5px;
+  font-style: normal;
+  line-height: 1.3em;
+}
+
+.cover {
+  position: relative;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 0;
+  padding: 161px 50px 50px 50px;
+}
+
+
+.aligned-text {
+  display: block;
+  justify-content: left;
+}
+
+.aligned-text_center {
+  display: flex;
+  justify-content: center;
+  padding-top: 22px;
+  letter-spacing: 32px;
+  padding-left: 12px;
+}
+
+.aligned-text_right {
+  display: flex;
+  padding-top: 18px;
+  justify-content: right;
+}
+.letter-spacing-extended {
+  padding-left: 35px;
+  padding-right: 18px;
+  letter-spacing: 0.6em;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0;
+}
+
+
+.cover__description {
+  display: block;
+  position: relative;  
+  color: white;
+  padding: 136px 0 0;
+}
+
+.cover__description-text {
+  display: inline;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 22px;
+  word-spacing: 18px;
+  padding-left: 29px;
+}
+
+.bet-button {
+  display: inline;
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  font-size: 21px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 15px 30px 11px 28px;
+  letter-spacing: 1px;
+  margin-left: 76px;
 }
 .lots {
   display: block;
@@ -126,45 +199,84 @@ background-image: url(../images/cover.jpg);
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
-.title_1{
-width: 100px;
-height: 100px;
+.about {
+  padding-top: 182;
+  padding-left: 25px;
+  padding-right: 30px;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 27px;
 }
-.title_2{
-    display:flex;
-    align-items: center;
-    width: 100px;
-    height: 100px;
-    }
-.title_3{
-    display: flex;
-    justify-content: flex-end;
-    width: 100px;
-    height: 100px;
-    }
-.about_title{
-  text-transform: uppercase;
-margin-bottom: 70px;
-margin-top: 70px;
+
+.about_column {
+  justify-self: center;
 }
+
+/* контейнер логотипа*/
 .about_logo {
-display: flex;;
-position: relative;
-width: 240px;
-height: 240px;
-background-color: black;
-border-radius: 150px;
-align-items: center;
+  display: flex;
+  position: relative;
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 150px;
+  align-items: center;
 }
+
+.about_column_text {
+  margin-top: 6px;
+  grid-column: span 2;
+}
+
+.about_title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  padding: 100px 0 104px;
+  line-height: 1;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
 .about_text {
-display: flex;
-flex-direction: column;
-gap: 25px;
-margin-bottom: 50px;
-  }
-.social_seti{
-display: flex;
-justify-content: flex-end;
-height: 48px;
-width: 48px;
+  font-size: 20px;
+  line-height: normal;
 }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 179px 48px 80px;
+  }
+  
+  .footer__menu {
+    padding-left: 30px;
+    line-height: 1.2em;
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  .footer__menu-link {
+    list-style-type: none;
+  }
+  
+  .footer_link_activ {
+    text-decoration: none;
+  }
+  
+  .footer__social-list {
+    display: flex;
+    gap: 48px;
+    list-style: none;
+    padding-right: 5px;
+  }
+  
+  .footer__social-icon {
+    height: 48px;
+    width: 48px;
+  }
