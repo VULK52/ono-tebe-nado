@@ -45,6 +45,7 @@
   background-position: center;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
+  height: 757px;
   background-size: 100% 100%;
   z-index: 0;
   padding: 161px 50px 50px 50px;
@@ -123,6 +124,7 @@
   display: block;
   text-transform: uppercase;
   font-size: 40px;
+  font-weight: 700;
   font-weight: bold;
   padding: 0 0 30px 40px;
   line-height: 1;
@@ -226,6 +228,9 @@
 .about_column_text {
   margin-top: 6px;
   grid-column: span 2;
+}
+.first_abzac{
+margin-bottom: 20px;
 }
 
 .about_title {
