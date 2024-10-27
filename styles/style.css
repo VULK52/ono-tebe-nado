@@ -10,7 +10,7 @@
 
 .header__links-list {
   display: flex;
-  list-style: circle; 
+  list-style: circle;
   gap: 34px;
   font-size: 18px;
 }
@@ -45,12 +45,11 @@
   background-position: center;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
-  height: 757px;
+  min-height: 150px;
   background-size: 100% 100%;
   z-index: 0;
   padding: 161px 50px 50px 50px;
 }
-
 
 .aligned-text {
   display: block;
@@ -80,10 +79,9 @@
   letter-spacing: 0;
 }
 
-
 .cover__description {
   display: block;
-  position: relative;  
+  position: relative;
   color: white;
   padding: 136px 0 0;
 }
@@ -98,7 +96,7 @@
 }
 
 .bet-button {
-  font-family: sans-serif;
+  font-family: Raleway, sans-serif;
   display: inline;
   color: white;
   background: transparent;
@@ -190,7 +188,7 @@
   text-decoration: none;
 }
 
-.card-link{
+.card-link {
   text-decoration: none;
 }
 
@@ -229,8 +227,11 @@
   margin-top: 6px;
   grid-column: span 2;
 }
-.first_abzac{
-margin-bottom: 20px;
+.sdes_abzac {
+  margin-bottom: 20px;
+}
+.slishkom_abzac {
+  margin-bottom: 20px;
 }
 
 .about_title {
@@ -241,41 +242,40 @@ margin-bottom: 20px;
   line-height: 1;
 }
 
-
 .about_text {
   font-size: 20px;
   line-height: normal;
 }
 
-  .footer {
-    display: flex;
-    justify-content: space-between;
-    padding: 179px 48px 80px;
-  }
-  
-  .footer__menu {
-    padding-left: 30px;
-    line-height: 1.2em;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  .footer__menu-link {
-    list-style-type: none;
-  }
-  
-  .footer_link_activ {
-    text-decoration: none;
-  }
-  
-  .footer__social-list {
-    display: flex;
-    gap: 48px;
-    list-style: none;
-    padding-right: 5px;
-  }
-  
-  .footer__social-icon {
-    height: 48px;
-    width: 48px;
-  }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 179px 48px 80px;
+}
+
+.footer__menu {
+  padding-left: 30px;
+  line-height: 1.2em;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer__menu-link {
+  list-style-type: none;
+}
+
+.footer_link_activ {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  gap: 48px;
+  list-style: none;
+  padding-right: 5px;
+}
+
+.footer__social-icon {
+  height: 48px;
+  width: 48px;
+}
