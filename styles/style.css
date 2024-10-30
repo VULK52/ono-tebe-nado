@@ -50,7 +50,6 @@ main {
   position: relative;
   min-width: 1100px;
   min-height: 757px;
-  border: 1px solid black;
   font-family: Raleway, sans-serif;
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
@@ -232,7 +231,7 @@ main {
   text-decoration: none;
 }
 
-.overlay {
+.overlaay {
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 0, 0.6);
@@ -301,7 +300,7 @@ main {
 
 .footer_address {
   display: block;
-  justify-self: flex-start;
+  justify-self:flex-start;
   line-height: 25px;
   text-underline-position: under;
 }
@@ -317,8 +316,13 @@ main {
   list-style: none;
 }
 
-.footer__links-list-item_no-bullit {
+.footer__menu-link {
   text-decoration: none;
+  border-bottom: 1px solid black;
+}
+.footer__menu-link--active {
+  border-bottom: none;
+
 }
 
 .footer__menu-list-item {
